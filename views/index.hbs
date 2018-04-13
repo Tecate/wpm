@@ -1,0 +1,109 @@
+<div id="wrapper">
+  <div id="header">WPM Test</div>
+  <div id="main-container">
+      <div id="left-stats" class="side-panel">
+          <div class="wpm">WPM: </div>
+          <div id="cpm">CPM: </div>
+          <div id="errors">Errors: </div>
+          <div id="accuracy">Accuracy: </div>
+          <br>
+          <div id="average-wpm"></div>
+          <div id="average-accuracy"></div>
+        <label for="username">user name:</label>
+        <input id="username">
+        <label for="password">password:</label>
+        <input id="password">
+        <button onclick="signin()">login</button>
+        <button onclick="signup()">register</button>
+        <textarea name="" id="new-quote" cols="30" rows="10"></textarea>
+        <button onclick="submitQuote()">submit quote</button>
+
+      </div>
+      <div id="main">
+        <div id="copy-wrapper">
+          <div id="copy"></div>
+          <div id="end-screen">
+            <div class="wpm"></div>
+            <div class="rank">Rank S</div>
+            <div id="donut-wrapper">Accuracy<div class="ct-chart accuracy-donut"></div></div>
+            <div>Press [enter] to continue</div>
+          </div>
+        </div>
+        <div id="input-wrapper">
+          <div id="input">Start typing</div>
+        </div>
+        <div id="keyboard">
+            <div class="key-row key-row1">
+                <div class="key key-0"></div>
+                <div class="key key-1"></div>
+                <div class="key key-2"></div>
+                <div class="key key-3"></div>
+                <div class="key key-4"></div>
+                <div class="key key-5"></div>
+                <div class="key key-6"></div>
+                <div class="key key-7"></div>
+                <div class="key key-8"></div>
+                <div class="key key-9"></div>
+                <div class="key key-10"></div>
+                <div class="key key-11"></div>
+                <div class="key key-12"></div>
+                <div class="key key-13"></div>
+            </div>
+            <div class="key-row key-row2">
+                <div class="key key-14"></div>
+                <div class="key key-15"></div>
+                <div class="key key-16"></div>
+                <div class="key key-17"></div>
+                <div class="key key-18"></div>
+                <div class="key key-19"></div>
+                <div class="key key-20"></div>
+                <div class="key key-21"></div>
+                <div class="key key-22"></div>
+                <div class="key key-23"></div>
+                <div class="key key-24"></div>
+                <div class="key key-25"></div>
+                <div class="key key-26"></div>
+                <div class="key key-27"></div>
+            </div>
+            <div class="key-row key-row3">
+                <div class="key key-28"></div>
+                <div class="key key-29"></div>
+                <div class="key key-30"></div>
+                <div class="key key-31"></div>
+                <div class="key key-32"></div>
+                <div class="key key-33"></div>
+                <div class="key key-34"></div>
+                <div class="key key-35"></div>
+                <div class="key key-36"></div>
+                <div class="key key-37"></div>
+                <div class="key key-38"></div>
+                <div class="key key-39"></div>
+                <div class="key key-40"></div>
+            </div>
+            <div class="key-row key-row4">
+                <div class="key key-41"></div>
+                <div class="key key-42"></div>
+                <div class="key key-43"></div>
+                <div class="key key-44"></div>
+                <div class="key key-45"></div>
+                <div class="key key-46"></div>
+                <div class="key key-47"></div>
+                <div class="key key-48"></div>
+                <div class="key key-49"></div>
+                <div class="key key-50"></div>
+                <div class="key key-51"></div>
+                <div class="key key-52"></div>
+            </div>
+            <div class="key-row key-row5">
+                <div class="key key-53"></div>
+            </div>
+        </div>
+        <canvas id="chart" width="640" height="100"></canvas>
+      </div>
+      <div id="right-stats" class="side-panel">
+        <div>Recent games</div>
+        <div id="past-rounds"></div>
+        <div class="ct-chart past-rounds-chart"></div>
+      </div>
+  </div>
+</div>

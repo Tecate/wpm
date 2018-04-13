@@ -1,0 +1,339 @@
+@keyframes fadebg {
+    0% {background-color: yellow;}
+    100% {background-color: transparent;}
+}
+
+@keyframes flickerIn {
+    0% { opacity: 0; }
+    10% { opacity: 0.2; }
+    20% { opacity: 0; }
+    30% { opacity: 0.4; }
+    40% { opacity: 0; }
+    50% { opacity: 0.6; }
+    60% { opacity: 0; }
+    70% { opacity: 0.8; }
+    80% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.key {
+  opacity: 0;
+  animation: flickerIn 0.35s ease-in 1s forwards;
+}
+
+.key-0  { animation-delay: 0.25s } /*start row 1*/
+.key-1  { animation-delay: 0.20s }
+.key-2  { animation-delay: 0.10s }
+.key-3  { animation-delay: 0.15s }
+.key-4  { animation-delay: 0.05s }
+.key-5  { animation-delay: 0.10s }
+.key-6  { animation-delay: 0.00s }
+.key-7  { animation-delay: 0.05s }
+.key-8  { animation-delay: 0.15s }
+.key-9  { animation-delay: 0.10s }
+.key-10 { animation-delay: 0.05s }
+.key-11 { animation-delay: 0.10s }
+.key-12 { animation-delay: 0.15s }
+.key-13 { animation-delay: 0.25s } /*end row 1*/
+.key-14 { animation-delay: 0.25s } /*start row 2*/
+.key-15 { animation-delay: 0.20s }
+.key-16 { animation-delay: 0.10s }
+.key-17 { animation-delay: 0.05s }
+.key-18 { animation-delay: 0.10s }
+.key-19 { animation-delay: 0.00s }
+.key-20 { animation-delay: 0.05s }
+.key-21 { animation-delay: 0.10s }
+.key-22 { animation-delay: 0.10s }
+.key-23 { animation-delay: 0.20s }
+.key-24 { animation-delay: 0.15s }
+.key-25 { animation-delay: 0.10s }
+.key-26 { animation-delay: 0.15s }
+.key-27 { animation-delay: 0.25s } /*end row 2*/
+.key-28 { animation-delay: 0.25s } /*start row 3*/
+.key-29 { animation-delay: 0.20s }
+.key-30 { animation-delay: 0.10s }
+.key-31 { animation-delay: 0.15s }
+.key-32 { animation-delay: 0.05s }
+.key-33 { animation-delay: 0.10s }
+.key-34 { animation-delay: 0.00s }
+.key-35 { animation-delay: 0.10s }
+.key-36 { animation-delay: 0.15s }
+.key-37 { animation-delay: 0.10s }
+.key-38 { animation-delay: 0.10s }
+.key-39 { animation-delay: 0.20s }
+.key-40 { animation-delay: 0.25s } /*end row 3*/
+.key-41 { animation-delay: 0.25s } /*start row 4*/
+.key-42 { animation-delay: 0.05s }
+.key-43 { animation-delay: 0.10s }
+.key-44 { animation-delay: 0.15s }
+.key-45 { animation-delay: 0.00s }
+.key-46 { animation-delay: 0.15s }
+.key-47 { animation-delay: 0.05s }
+.key-48 { animation-delay: 0.10s }
+.key-49 { animation-delay: 0.20s }
+.key-50 { animation-delay: 0.10s }
+.key-51 { animation-delay: 0.15s }
+.key-52 { animation-delay: 0.25s } /*end row 1*/
+.key-53 { animation-delay: 0.25s } /*spacebar*/
+
+.fade {
+  background: #9caba1;
+}
+
+
+body {
+    font: 12px monospace;
+    color: #f8f8f8;
+    background: url("../images/dotted-tile.png") #1a1a1a;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  height: 100vh;
+}
+
+#main-container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    margin: 0px auto;
+}
+
+#main {
+    width: 640px;
+    height: 480px;
+/*     background: #3d3d3d; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#right-stats, #left-stats {
+/*     width: 200px; */
+  width: 20vw;
+    box-sizing: border-box;
+    padding: 20px 20px;
+}
+
+#right-stats {background: transparent; }
+#left-stats {background: transparent; }
+
+#header {
+
+}
+
+#input-wrapper {
+    width: 20%;
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#input {
+  padding: 5px;
+    font-size: 14px;
+    color: #fff;
+  position: absolute;
+  right: 0px;
+  white-space: pre;
+  transition: all 0.25s;
+}
+
+#copy-wrapper {
+    width: 0px;
+    height: 0px;
+    box-sizing: border-box;
+    /* padding: 15px; */
+    font-size: 16px;
+    /* border: 3px solid #9caba1; */
+    background:  #020403;
+    position: relative;
+    transition: all 0.25s ease-out;
+    color: transparent;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.copy-width-anim {
+  width: 100% !important;
+  height: 200px !important;
+  padding: 15px;
+  border: 3px solid #9caba1;
+  color: white !important;
+  margin-top:  0px !important;
+  margin-bottom:  0px !important;
+}
+
+#copy {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    transition: all 0.25s;
+/*     white-space: pre-wrap; */
+}
+
+#end-screen {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background:  #020403;
+  opacity: 0;
+  transition: all 0.25s;
+  transition-delay: all 0.25s;
+}
+
+.opaque { opacity: 1 !important; }
+.transparent { opacity: 0 !important; }
+
+/* #copy:after {
+  content: attr(data-value);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 60%;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 16px;
+  line-height: 1.5;
+  color: grey;
+  border: 1px solid white;
+} */
+
+.copy-left { color: grey; }
+.copy-current { background: #9caba1; color: black; }
+.copy-right {  }
+.copy-error { background: red; }
+
+
+.error {
+    color: red;
+    background: #2d0000;
+  white-space: pre;
+}
+
+.error-bg {
+    background: #404040;
+}
+
+.cursor {
+/*     border-right: 1px solid white; */
+    display:  inline-block;
+    white-space: pre-wrap;
+    width:  1px;
+    height: 16px;
+    background: #fff;
+}
+
+.before {}
+.current { background: #848383; white-space: nowrap;}
+.after {}
+
+.completed-words {
+    color: #848383;
+}
+
+.garbage { display: none; }
+
+
+
+.key {
+  height: 32px;
+  width: 32px;
+  border: 1px white;
+  display: inline-block;
+  transition: all 0.25s;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+.key-row5 {
+  text-align:  center;
+}
+
+.key-53 {
+  width:  50%;
+  height:  16px;
+  border:  1px solid #616a64;
+  border-radius: 5px;
+  margin-top:  10px;
+}
+
+.keyboard {
+  margin-left: -32px;
+}
+
+.key-row1 {}
+.key-row2 { padding-left: 16px; }
+.key-row3 { padding-left: 32px; }
+.key-row4 { padding-left: 48px; }
+
+.key-hit {background: blue;}
+
+
+.ct-slice-donut {
+  stroke-width: 4px !important;
+}
+
+.ct-series-a path {
+  stroke: #9caba1 !important;
+}
+.ct-series-b path {
+  stroke: #3d3d3d !important;
+  stroke-width: 2px !important;
+  stroke-dasharray: 3px;
+}
+
+.ct-label {
+  fill: white;
+  color:  white;
+  width:  auto !important;
+}
+
+#donut-wrapper {
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  float: right;
+}
+
+.ct-series-a .ct-line {
+  /* Set the colour of this series line */
+  stroke: white;
+  /* Control the thikness of your lines */
+  stroke-width: 2px;
+  /* Create a dashed line with a pattern */
+  /* stroke-dasharray: 10px 20px; */
+}
+
+/* This selector overrides the points style on line charts. Points on line charts are actually just very short strokes. This allows you to customize even the point size in CSS */
+.ct-series-a .ct-point {
+  /* Colour of your points */
+  stroke: #9caba1;
+  /* Size of your points */
+  stroke-width: 5px;
+  /* Make your points appear as squares */
+/*   stroke-linecap: square; */
+}
+
+.past-rounds-chart {
+  /* background: blue; */
+}
+
+span.ct-label { width: 10px !important; }
+
+.ct-grid { stroke:  #3d3d3d; }
