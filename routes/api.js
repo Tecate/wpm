@@ -10,6 +10,8 @@ var Quote = require("../models/quote");
 // var Stats = require("../models/stats");
 
 /*
+routes:
+
 signup
 signin
 
